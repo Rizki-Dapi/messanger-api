@@ -1,0 +1,21 @@
+$kind: http-request
+name: Update Chat
+method: PUT
+url: '{{base_url}}/chat/{{chat}}'
+order: 7000
+headers:
+  - key: Content-Type
+    value: application/json
+  - key: Accept
+    value: application/json
+  - key: Authorization
+    value: 'Bearer {{token}}'
+pathVariables:
+  - key: chat
+    value: '1'
+body:
+  type: json
+  content: |-
+    {
+      "message": "Updated message"
+    }

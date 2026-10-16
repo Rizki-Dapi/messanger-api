@@ -1,0 +1,10 @@
+$kind: http-request
+name: Me
+method: GET
+url: '{{base_url}}/auth/me'
+order: 8000
+headers:
+  - key: Accept
+    value: application/json
+  - key: Authorization
+    value: 'Bearer {{token}}'

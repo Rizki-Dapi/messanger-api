@@ -1,0 +1,17 @@
+$kind: http-request
+name: Update Photo Profile
+method: PUT
+url: '{{base_url}}/user/update-photo-profile'
+order: 2000
+headers:
+  - key: Accept
+    value: application/json
+  - key: Authorization
+    value: 'Bearer {{token}}'
+body:
+  type: formdata
+  content:
+    - key: profile_photo_path
+      type: file
+      src: '/path/to/photo.jpg'
+      description: 'Profile photo (png, jpg, jpeg — max 20MB)'

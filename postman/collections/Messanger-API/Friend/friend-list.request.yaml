@@ -1,0 +1,10 @@
+$kind: http-request
+name: Friend List
+method: GET
+url: '{{base_url}}/friend/list'
+order: 1000
+headers:
+  - key: Accept
+    value: application/json
+  - key: Authorization
+    value: 'Bearer {{token}}'

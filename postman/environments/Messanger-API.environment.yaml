@@ -1,0 +1,12 @@
+name: Messanger API - Local
+values:
+  - key: base_url
+    value: 'http://localhost:8000/api'
+    description: Base URL for the Messanger API
+    enabled: true
+    type: default
+  - key: token
+    value: ''
+    description: JWT Bearer token obtained after login
+    enabled: true
+    type: default

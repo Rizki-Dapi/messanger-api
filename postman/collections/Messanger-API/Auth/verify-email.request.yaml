@@ -1,0 +1,13 @@
+$kind: http-request
+name: Verify Email
+method: GET
+url: '{{base_url}}/auth/verify-email/{{id}}/{{hash}}'
+order: 6000
+headers:
+  - key: Accept
+    value: application/json
+pathVariables:
+  - key: id
+    value: '1'
+  - key: hash
+    value: 'your-hash-here'

@@ -1,0 +1,13 @@
+$kind: http-request
+name: Unfriend
+method: DELETE
+url: '{{base_url}}/friend/unfriend/{{friend}}'
+order: 4000
+headers:
+  - key: Accept
+    value: application/json
+  - key: Authorization
+    value: 'Bearer {{token}}'
+pathVariables:
+  - key: friend
+    value: '1'

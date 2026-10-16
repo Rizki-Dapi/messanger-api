@@ -1,0 +1,13 @@
+$kind: http-request
+name: Delete Story
+method: DELETE
+url: '{{base_url}}/stories/{{story}}'
+order: 6000
+headers:
+  - key: Accept
+    value: application/json
+  - key: Authorization
+    value: 'Bearer {{token}}'
+pathVariables:
+  - key: story
+    value: '1'

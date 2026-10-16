@@ -1,0 +1,21 @@
+$kind: http-request
+name: Create Story
+method: POST
+url: '{{base_url}}/stories'
+order: 5000
+headers:
+  - key: Accept
+    value: application/json
+  - key: Authorization
+    value: 'Bearer {{token}}'
+body:
+  type: formdata
+  content:
+    - key: captions
+      type: text
+      value: 'My story caption'
+      description: 'Required if media is not provided (max 255 chars)'
+    - key: media
+      type: file
+      src: '/path/to/media.jpg'
+      description: 'Required if captions not provided. Allowed: jpg, jpeg, png, gif, mp4, mov, flv, wmp (max 15MB)'

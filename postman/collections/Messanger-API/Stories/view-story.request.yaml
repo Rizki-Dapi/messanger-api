@@ -1,0 +1,13 @@
+$kind: http-request
+name: View Story
+method: GET
+url: '{{base_url}}/stories/view/{{storyId}}'
+order: 3000
+headers:
+  - key: Accept
+    value: application/json
+  - key: Authorization
+    value: 'Bearer {{token}}'
+pathVariables:
+  - key: storyId
+    value: '1'

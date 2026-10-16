@@ -1,0 +1,6 @@
+$kind: collection
+name: Messanger API
+description: 'Complete API collection for the Messanger application. Covers Auth, User, Chat, Friend, and Stories endpoints. Routes protected by jwt.auth middleware require the Authorization header with a Bearer token.'
+variables:
+  - key: base_url
+    value: 'http://localhost:8000/api'

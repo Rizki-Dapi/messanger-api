@@ -1,0 +1,13 @@
+$kind: http-request
+name: Mark As Read
+method: PUT
+url: '{{base_url}}/chat/mark-as-read/{{conversationId}}'
+order: 6000
+headers:
+  - key: Accept
+    value: application/json
+  - key: Authorization
+    value: 'Bearer {{token}}'
+pathVariables:
+  - key: conversationId
+    value: '1'

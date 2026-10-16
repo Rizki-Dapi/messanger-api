@@ -1,0 +1,10 @@
+$kind: http-request
+name: Delete Photo Profile
+method: PUT
+url: '{{base_url}}/user/delete-photo-profile'
+order: 3000
+headers:
+  - key: Accept
+    value: application/json
+  - key: Authorization
+    value: 'Bearer {{token}}'

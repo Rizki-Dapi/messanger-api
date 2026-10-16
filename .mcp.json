@@ -1,0 +1,12 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "wsl.exe",
+            "args": [
+                "/usr/bin/php8.3",
+                "/home/rizki/projects/service-api/laravel/Messanger-api/artisan",
+                "boost:mcp"
+            ]
+        }
+    }
+}
